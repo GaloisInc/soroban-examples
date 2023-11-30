@@ -1,4 +1,5 @@
 #![cfg(test)]
+#![cfg(not(crux))]
 
 use super::{AllocContract, AllocContractClient};
 use soroban_sdk::{testutils::Logger, Env};
