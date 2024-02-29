@@ -10,6 +10,11 @@ build:
 		$(MAKE) -C $$dir build || exit 1; \
 	done
 
+saw-build:
+	@for dir in $(SUBDIRS) ; do \
+		$(MAKE) -C $$dir saw-build || exit 1; \
+	done
+
 test: build
 	@for dir in $(SUBDIRS) ; do \
 		$(MAKE) -C $$dir test || exit 1; \
