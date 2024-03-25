@@ -1,4 +1,5 @@
 #![cfg(test)]
+#![cfg(not(crux))]
 
 use super::*;
 use soroban_sdk::{testutils::Events, vec, Env, IntoVal};
