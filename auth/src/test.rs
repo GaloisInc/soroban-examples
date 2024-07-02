@@ -1,4 +1,5 @@
 #![cfg(test)]
+#![cfg(not(crux))]
 extern crate std;
 use super::*;
 
