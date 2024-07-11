@@ -1,4 +1,5 @@
 #![cfg(test)]
+#![cfg(not(crux))]
 
 use crate::{contract_a, ContractB, ContractBClient};
 use soroban_sdk::Env;
